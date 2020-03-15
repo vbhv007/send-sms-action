@@ -2,9 +2,9 @@ import boto3
 import os
 
 def main():
-    mobile_no = os.environ["MOBILE_NO"]
-    aws_key_id = os.environ["AWS_KEY_ID"]
-    aws_key_access = os.environ["AWS_KEY_ACCESS"]
+    mobile_no = os.environ["INPUT_MOBILE_NO"]
+    aws_key_id = os.environ["INPUT_AWS_KEY_ID"]
+    aws_key_access = os.environ["INPUT_AWS_KEY_ACCESS"]
     client = boto3.client(
         'sns',
         'us-east-1',
