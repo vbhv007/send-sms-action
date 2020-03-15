@@ -9,6 +9,12 @@ inputs:
   mobile_no:
     description: "your mobile number"
     required: true
+  aws_key_id:
+    description: "your aws key id"
+    required: true
+  aws_key_access:
+    description: "your aws key access"
+    required: true
 
 runs:
   using: "docker"
