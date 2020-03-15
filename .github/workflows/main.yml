@@ -11,6 +11,8 @@ jobs:
         uses: vbhv007/send-sms-action@master
         with:
           mobile_no: ${{ secrets.MOBILE_NO }}
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_key_access: ${{ secrets.AWS_KEY_ACCESS }}
       
       - name : Run
         run: |
