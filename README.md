@@ -1,8 +1,6 @@
 # Send-SMS Github Actions  
 > When a push occurs in the master branch, a SMS is sent to the user.  
 
-![slack-message](https://user-images.githubusercontent.com/18473861/76513573-da17fb00-6499-11ea-8358-437f003959fd.png)  
-
 ## Parameters
 Make sure that these parameters are required as [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
 | Parameter | Type | Description |
