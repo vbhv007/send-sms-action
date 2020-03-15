@@ -1,0 +1,15 @@
+name: "send sms"
+description: "Send sms to your mobile when a push occurs in the master branch"
+author: "vbhv007"
+branding:
+  icon: message-square
+  color: yellow
+
+inputs:
+  mobile_no:
+    description: "your mobile number"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
