@@ -1,0 +1,17 @@
+name: When a push occurs in the master branch, a sms is sent to the user.
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: notify
+        id: notify
+        
+        uses: vbhv007/send-sms-action@master
+        with:
+          mobile_no: ${{ secrets.MOBILE_NO }}
+      
+      - name : Run
+        run: |
+          echo 'Run!'
