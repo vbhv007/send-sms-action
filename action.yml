@@ -1,4 +1,4 @@
-name: "send sms"
+name: "send-sms-action from vbhv007"
 description: "Send sms to your mobile when a push occurs in the master branch"
 author: "vbhv007"
 branding:
